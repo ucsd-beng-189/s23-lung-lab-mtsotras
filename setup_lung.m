@@ -3,6 +3,7 @@
 %beta=0 for homogenous lung
 %beta=1 for no ventilation/perfusion correlation
 %
+beta=0
 %number of iterations used in bisection:
 maxcount=20
 %
@@ -10,12 +11,12 @@ maxcount=20
 n=100
 %
 %reference oxygen concentration (moles/liter):
-cref=c/(22.4*(310/273))
+cref=0.20/(22.4*(310/273))
 %cref=concentration of oxygen 
 %in air at sea level at body temperature
 %
 %oxygen concentration in the inspired air:
-cI=cref
+cI=c/(22.4*(310/273));
 %
 %blood oxygen concentration
 %at full hemoglobin saturation: 
